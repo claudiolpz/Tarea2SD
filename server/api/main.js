@@ -75,11 +75,13 @@ app.post("/venta", (req, res) => {
       const producer = kafka.producer();
 
       await producer.connect();
-      const { cliente, cantidad, patente, stock} = req.body;
+      const { cliente, cantidad, patente, stock, ubicacion, hora} = req.body;
       let venta = {
         cliente: cliente,
         cantidad : cantidad,
-        patente : patente
+        patente : patente,
+        ubicacion:ubicacion,
+        hora:hora
       }
       let Stock = {
         patente: patente,
