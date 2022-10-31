@@ -54,9 +54,8 @@ const main = async () => {
 
       if(partition == 0)
       {
-        console.log("Particion 0")
+        console.log("Entra en Particion 0")
         console.log("El carro esta bien")
-
         
         var find = false;
         for(let i=0; i<=carro.length-1; i++)
@@ -79,8 +78,8 @@ const main = async () => {
       else if(partition == 1)
       {
         perdido.push(value["ubicacion"]);
-        console.log("Entra en particion 1")
-        console.log("Este carro esta profugo, patente:", value["patente"])
+        console.log("Entra en Particion 1")
+        console.log("Este carro esta perdido, patente:", value["patente"])
         console.log(perdido)
       }
     },
