@@ -18,10 +18,13 @@ con los siguientes body para cada ruta
 ```
 Para Venta: 
 {
-    "cliente":"chupete suazo",
-     "cantidad":2, 
-     "patente":"GHGL", 
-     "stock":2
+     "cliente": "chupte",
+    "cantidad": 5,
+    "stock": 3,
+    "hora": "130335",
+    "ubicacion": "aca",
+    "patente": "patente"
+
 }
 Para Registrar:
 {
