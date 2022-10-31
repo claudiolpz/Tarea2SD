@@ -73,7 +73,7 @@ const main = async () => {
       
           client.query("INSERT INTO miembros(nombre,apellido,rut,correo_dueno,patente_carrito,ispremium) values($1,$2,$3,$4,$5,$6);",[premium[0].nombre, premium[0].apellido, premium[0].rut, premium[0].mail, premium[0].patente,premium[0].premium]);
           console.log("Miembro premium insertado en la base de datos")
-          premium.splice(i,1);
+          premium.pop();
           });
         
         }
