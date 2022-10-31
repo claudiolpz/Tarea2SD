@@ -4,7 +4,7 @@ const dotenv = require('dotenv')
 const bodyParser = require('body-parser')
 const { Kafka } = require("kafkajs");
 const { client } = require("./db/dbconnector");
-//---------------STOCK----------------------
+//---------------venta----------------------
 const app = express()
 dotenv.config()
 app.use(bodyParser.urlencoded({
