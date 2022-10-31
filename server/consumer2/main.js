@@ -54,7 +54,7 @@ const main = async () => {
           for(let j=0; j<=stock.length-1; j++)
           {
             if(stock[j]["stock"]<20){
-              console.log("Preparar reposicion al carro con patente"+stock[j]["patente"]);
+              console.log("Preparar reposicion al carro con patente "+stock[j]["patente"]);
               stock.splice(j,1)
               j--;
             }
