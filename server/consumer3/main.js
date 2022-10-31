@@ -28,7 +28,7 @@ function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-const ubicacion_check = async () => {
+const ubicacion = async () => {
   while(true){
     await sleep(5000)
     for(let i=0; i<=carro.length-1; i++)
@@ -86,7 +86,7 @@ const main = async () => {
   })
 }
 
-ubicacion_check()
+ubicacion()
 
 app.listen(port,host,()=>{
     console.log(`API-Blocked run in: http://localhost:${port}.`)
